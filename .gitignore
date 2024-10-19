@@ -1,0 +1,8 @@
+monogramcc/build
+monogramcc/node_modules
+monogramcc/public/assets/images
+monogramcc/public/assets/videos
+monogramcc/src/assets/images
+monogramcc/src/assets/videos
+monogramcc/src/js
+monogramcc/src/*.html
