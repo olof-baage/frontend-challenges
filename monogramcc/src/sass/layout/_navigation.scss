@@ -1,2 +1,11 @@
 @use '../abstracts/variables' as var;
 @use '../abstracts/mixins' as mix;
+
+menu {
+    width: 98%;
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    height: 50px;
+    background-color: red;
+}

@@ -1,6 +1,25 @@
+/* local colors */
 /*
 color palette
 pink: #f9cdcd
 dark blue: #252422
 white: #f4f4f4
 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+menu {
+  width: 98%;
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  height: 50px;
+  background-color: red;
+}
