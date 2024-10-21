@@ -1,25 +1,17 @@
-/* local colors */
-/*
-color palette
-pink: #f9cdcd
-dark blue: #252422
-white: #f4f4f4
-*/
-* {
-  margin: 0;
-  padding: 0;
-}
+/* Error: Can't find stylesheet to import.
+ *    ,
+ * 16 | @use 'pages/shop';
+ *    | ^^^^^^^^^^^^^^^^^
+ *    '
+ *   src/sass/style.scss 16:1  root stylesheet */
 
-html,
-body {
-  height: 100%;
-}
-
-menu {
-  width: 98%;
-  position: fixed;
-  top: 1%;
-  left: 1%;
-  height: 50px;
-  background-color: red;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 16 \2502  @use 'pages/shop';\a    \2502  ^^^^^^^^^^^^^^^^^\a    \2575 \a   src/sass/style.scss 16:1  root stylesheet";
 }
