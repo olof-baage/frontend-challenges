@@ -23,9 +23,17 @@ menu ul {
 }
 
 menu ul li {
-   /* color: var.$secondary;*/
-    background-color: skyblue;
-    font-size: 1rem;
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-size: 0.75rem;
     text-transform: uppercase;
     margin-right: 2rem;
+}
+
+menu ul li,
+menu ul li a,
+menu ul li ap {
+    color: var.$secondary;
 }
