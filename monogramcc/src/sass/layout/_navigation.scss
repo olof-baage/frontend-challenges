@@ -4,8 +4,26 @@
 menu {
     width: 98%;
     position: fixed;
-    top: 1%;
+    top: 1.5%;
     left: 1%;
-    height: 50px;
-    background-color: red;
+    min-height: 1rem;
+    padding: 0.65rem;
+    background-color: var.$purple;
+    display: flex;
+    justify-content: space-between;
+}
+
+menu svg {
+    color: var.$secondary;
+}
+
+menu ul {
+    display: flex;
+    align-items: center;
+}
+
+menu ul li {
+   /* color: var.$secondary;*/
+    background-color: skyblue;
+    font-size: 1rem;
 }

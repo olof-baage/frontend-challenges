@@ -1,5 +1,5 @@
-@use 'abstracts/variables';
-@use 'abstracts/mixins';
+@use 'abstracts/variables' as var;
+@use 'abstracts/mixins' as mix;
 
 @use 'base/reset';
 @use 'base/typography';
@@ -15,6 +15,7 @@
 
 @use 'pages/shop';
 
-
-
+body {
+    background-color: var.$white;
+}
 
