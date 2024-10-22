@@ -166,8 +166,13 @@ menu ul li {
 
 menu ul li,
 menu ul li a,
-menu ul li ap {
+menu ul li p {
   color: #efc2b3;
+}
+
+menu ul li a:hover p,
+menu ul li a:focus p {
+  color: #ff8d6b;
 }
 
 body {

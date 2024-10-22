@@ -34,6 +34,10 @@ menu ul li {
 
 menu ul li,
 menu ul li a,
-menu ul li ap {
+menu ul li p {
     color: var.$secondary;
+}
+menu ul li a:hover p,
+menu ul li a:focus p {
+    color: var.$orange;
 }
