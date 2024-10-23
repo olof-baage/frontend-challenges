@@ -15,6 +15,7 @@ menu {
 
 menu svg {
     color: var.$secondary;
+    height: 100%;
 }
 
 menu ul {
@@ -40,5 +41,11 @@ menu ul li p {
 menu ul li a:hover p,
 menu ul li a:focus p {
     color: var.$orange;
+}
+
+.menu-item-currency {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 

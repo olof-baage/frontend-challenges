@@ -147,6 +147,7 @@ menu {
 
 menu svg {
   color: #efc2b3;
+  height: 100%;
 }
 
 menu ul {
@@ -173,6 +174,12 @@ menu ul li p {
 menu ul li a:hover p,
 menu ul li a:focus p {
   color: #ff8d6b;
+}
+
+.menu-item-currency {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 body {
