@@ -193,22 +193,37 @@ menu ul li a:focus p {
 
 .menu-item__all-curriencies {
   height: auto;
+  width: auto;
+  padding: 0.3rem 0 0.3rem 0;
+  margin: 0;
   position: absolute;
   top: 2rem;
   background-color: #fff;
 }
 
 .menu-item__all-curriencies li {
-  padding: 0;
+  padding: 0 0.5rem 0 0.5rem;
+  margin: 0;
   display: flex;
-  gap: 1rem;
   justify-content: space-between;
+  gap: 1rem;
+  background-color: yellow;
 }
 
 .menu-item__all-curriencies li p {
   display: inline;
   color: #1a2456;
   font-size: 1rem;
+  background-color: gray;
+  text-align: left;
+}
+
+.menu-item__all-curriencies li.currency__active {
+  background-color: #1a2456;
+}
+
+.menu-item__all-curriencies li.currency__active p {
+  color: #fff;
 }
 
 body {
