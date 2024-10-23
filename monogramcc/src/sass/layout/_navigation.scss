@@ -62,11 +62,11 @@ menu ul li a:focus p {
     height: auto;
     position: absolute;
     top: 2rem;
-    background-color: black;
+    background-color: var.$white;
 }
 
 .menu-item__all-curriencies li {
-    padding: 0.25rem;
+    padding: 0;
     display: flex;
     gap: 1rem;
     justify-content: space-between;
@@ -74,5 +74,7 @@ menu ul li a:focus p {
 
 .menu-item__all-curriencies li p {
     display: inline;
+    color: var.$primary;
+    font-size: 1rem;
 }
 
