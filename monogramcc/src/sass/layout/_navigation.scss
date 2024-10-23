@@ -59,9 +59,20 @@ menu ul li a:focus p {
 }
 
 .menu-item__all-curriencies {
-    width: 100px;
     height: auto;
     position: absolute;
     top: 2rem;
-    background-color: skyblue;
+    background-color: black;
 }
+
+.menu-item__all-curriencies li {
+    padding: 0.25rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.menu-item__all-curriencies li p {
+    display: inline;
+}
+
