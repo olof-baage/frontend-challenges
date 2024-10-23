@@ -178,3 +178,15 @@ menu ul li a:focus p {
 body {
   background-color: #fff;
 }
+
+/* stylings for mobile nav */
+@media screen and (max-width: 992px) {
+  menu .menu-item {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  menu .menu-item {
+    display: none;
+  }
+}

@@ -13,9 +13,13 @@
 @use 'layout/sidebar';
 @use 'layout/forms';
 
+@use 'pages/default';
+
 @use 'pages/shop';
 
-body {
-    background-color: var.$white;
-}
+@use 'mobile/mobile-styles';
+
+
+
+
 
