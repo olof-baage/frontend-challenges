@@ -182,8 +182,21 @@ menu ul li a:focus p {
   gap: 1rem;
 }
 
-.menu-item__all-curriencies {
+.hide-currencies {
   display: none;
+}
+
+.show-currencies {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item__all-curriencies {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 2rem;
+  background-color: skyblue;
 }
 
 body {
