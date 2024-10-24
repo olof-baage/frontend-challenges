@@ -208,16 +208,8 @@ menu ul li a:focus p {
   gap: 1rem;
 }
 
-.menu-item__all-curriencies li.currency__active {
-  background-color: #1a2456;
-}
-
-.menu-item__all-curriencies li {
-  background-color: #6c757d;
-}
-
 .menu-item__all-curriencies li p {
-  color: white;
+  color: #1a2456;
   font-size: 1rem;
 }
 
@@ -227,6 +219,16 @@ menu ul li a:focus p {
 
 .menu-item__all-curriencies li p:last-child {
   padding: 0 1rem 0 0;
+}
+
+.menu-item__all-curriencies li.currency__active {
+  background-color: #1a2456;
+  color: #fff;
+}
+
+.menu-item__all-curriencies li.currency_inactive:hover,
+.menu-item__all-curriencies li.currency_inactive:focus {
+  background-color: rgb(209, 208, 208);
 }
 
 body {
