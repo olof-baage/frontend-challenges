@@ -223,11 +223,14 @@ menu ul li a:focus p {
 
 .menu-item__all-curriencies li.currency__active {
   background-color: #1a2456;
+}
+
+.menu-item__all-curriencies li.currency__active p {
   color: #fff;
 }
 
-.menu-item__all-curriencies li.currency_inactive:hover,
-.menu-item__all-curriencies li.currency_inactive:focus {
+.menu-item__all-curriencies li.currency__inactive:hover,
+.menu-item__all-curriencies li.currency__inactive:focus {
   background-color: rgb(209, 208, 208);
 }
 
