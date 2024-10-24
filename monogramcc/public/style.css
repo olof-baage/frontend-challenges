@@ -192,13 +192,10 @@ menu ul li a:focus p {
 }
 
 .menu-item__all-curriencies {
-  height: auto;
-  width: auto;
-  padding: 0.3rem 0 0.3rem 0;
-  margin: 0;
   position: absolute;
   top: 3rem;
-  right: 1rem;
+  padding: 0.3rem 0 0.3rem 0;
+  margin: 0;
   background-color: #fff;
 }
 
@@ -208,31 +205,11 @@ menu ul li a:focus p {
   display: flex;
   gap: 2rem;
   justify-content: space-between;
-  background-color: yellow;
 }
 
 .menu-item__all-curriencies li p {
-  color: #1a2456;
-  font-size: 1rem;
-  text-align: left;
-}
-
-.menu-item__all-curriencies li p:first-child {
-  width: 2.8rem;
-  padding: 0 0 0 1rem;
-}
-
-.menu-item__all-curriencies li p:last-child {
-  width: auto;
-  padding: 0 1rem 0 0;
-}
-
-.menu-item__all-curriencies li.currency__active {
-  background-color: #1a2456;
-}
-
-.menu-item__all-curriencies li.currency__active p {
-  color: #fff;
+  color: white;
+  background-color: black;
 }
 
 body {
