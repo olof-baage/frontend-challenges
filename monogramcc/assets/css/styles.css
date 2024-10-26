@@ -39,6 +39,7 @@ body {
     background-color: #000;
     width: 100%;
     min-height: 100%;
+    font-family: "Prompt", serif;
 }
 
 /* lists general */
@@ -85,7 +86,6 @@ menu {
 }
 
 .menu__container-right {
-    border: 1px dtted red;
     height: auto;
     width: auto;
     display: flex;
@@ -107,4 +107,9 @@ menu {
 .li--main-menu a,
 .li--shop-menu a {
     color: var(--secondary);
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
