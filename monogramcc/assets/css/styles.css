@@ -41,6 +41,22 @@ body {
     min-height: 100%;
 }
 
+/* lists general */
+.ul {
+    display: flex;    
+}
+
+.ul__li {
+    list-style-type: none;
+}
+
+/* links general */
+.a {
+    text-decoration: none;
+}
+
+/* grid */
+
 .container {
     width: 100%;
     height: 100%;
@@ -57,8 +73,38 @@ menu {
     left: 1%;
     right: 1%;
     width: 98%;
-    height: 75px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     background-color: var(--purple);
+}
+
+.svg--logo {
+    color: var(--secondary);
+    margin: 0.5rem;
+}
+
+.menu__container-right {
+    border: 1px dtted red;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem 0 0;
+}
+
+.ul--main-menu {
+    margin-right: 1.5rem;
+    gap: 1rem;
+}
+
+.ul--shop-menu {
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.li--main-menu a,
+.li--shop-menu a {
+    color: var(--secondary);
 }
