@@ -121,10 +121,14 @@ menu {
 
 .li--two-level-list a {
     background-image: url(../images/arrow_drop_down_24dp_EFC2B3_FILL0_wght400_GRAD0_opsz24.png);
+    background-size: 1.2rem auto;
+    background-position:  right center;
     background-repeat: no-repeat;
+    padding: 0 1rem 0 0;
 }
 
 .li--two-level-list a:hover,
 .li--two-level-list a:focus {
     color: var(--white);
+    background-image: url(../images/arrow_drop_down_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png);
 }
