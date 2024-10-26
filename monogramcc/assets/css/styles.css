@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+/* Variabeln */
+
+:root {
+    --blue: #1a2456;
+    --indigo: #1a2456;
+    --purple: #1a2456;
+    --pink: #efc2b3;
+    --red: #ff8d6b;
+    --orange: #ff8d6b;
+    --yellow: #f5b335;
+    --green: #5a7f71;
+    --teal: #5a7f71;
+    --cyan: #5a7f71;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #1a2456;
+    --secondary: #efc2b3;
+    --success: #5a7f71;
+    --info: #5a7f71;
+    --warning: #f5b335;
+    --danger: #ff8d6b;
+    --light: #efc2b3;
+    --dark: #1a2456;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+body {
+    background-color: #000;
+    width: 100%;
+    min-height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    gap: 10px;
+    flex-direction: column;   
+}
+
+/* menu, fixed */
+
+menu {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    width: 98%;
+    height: 75px;
+    background-color: var(--purple);
+}
