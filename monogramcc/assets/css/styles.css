@@ -119,6 +119,11 @@ menu {
     color: var(--orange);
 }
 
+.li--two-level-list a {
+    background-image: url(../images/arrow_drop_down_24dp_EFC2B3_FILL0_wght400_GRAD0_opsz24.png);
+    background-repeat: no-repeat;
+}
+
 .li--two-level-list a:hover,
 .li--two-level-list a:focus {
     color: var(--white);
