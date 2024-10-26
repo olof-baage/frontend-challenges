@@ -113,3 +113,13 @@ menu {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
+.li--one-level-list a:hover,
+.li--one-level-list a:focus {
+    color: var(--orange);
+}
+
+.li--two-level-list a:hover,
+.li--two-level-list a:focus {
+    color: var(--white);
+}
