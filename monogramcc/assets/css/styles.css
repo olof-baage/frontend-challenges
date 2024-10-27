@@ -19,6 +19,7 @@
     --cyan: #5a7f71;
     --white: #fff;
     --gray: #6c757d;
+    --gray-light: #e7e8ea;    
     --gray-dark: #343a40;
     --primary: #1a2456;
     --secondary: #efc2b3;
@@ -147,11 +148,21 @@ menu {
 
 .ul__li__ul__li {
     width: calc(100% - 2rem);
-    background-color: grey;
-    padding: 0 1rem 0 1rem;
+    padding: 0.25rem 1rem 0.25rem 1rem;
 }
 
 .ul__li__ul__li a {
     font-size: 1rem;
-    color: var(--grey-dark);
+    color: var(--gray-dark);
+}
+
+.ul__li__ul__li:hover,
+.ul__li__ul__li:focus {
+    background-color: var(--gray-light);
+    color: var(--gray);
+}
+
+.ul__li__ul__li:hover a,
+.ul__li__ul__li:focus a {
+    color: var(--gray-dark);
 }
