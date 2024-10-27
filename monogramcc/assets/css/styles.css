@@ -132,3 +132,26 @@ menu {
     color: var(--white);
     background-image: url(../images/arrow_drop_down_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png);
 }
+
+.li--level-two a {
+    background-image: none;
+    padding: 0;
+}
+
+.ul__li__ul {
+    position: fixed;
+    top: 4rem;
+    background-color: var(--white);
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.ul__li__ul__li {
+    width: calc(100% - 2rem);
+    background-color: grey;
+    padding: 0 1rem 0 1rem;
+}
+
+.ul__li__ul__li a {
+    font-size: 1rem;
+    color: var(--grey-dark);
+}
