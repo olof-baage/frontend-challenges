@@ -139,6 +139,10 @@ menu {
     padding: 0;
 }
 
+.ul__li__ul--invisbile {
+    display: none;
+}
+
 .ul__li__ul {
     position: fixed;
     top: 4rem;
