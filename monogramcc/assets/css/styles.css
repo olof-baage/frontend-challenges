@@ -48,7 +48,8 @@ body {
     display: flex;    
 }
 
-.ul__li {
+.ul__li,
+.ul__li__ul__li {
     list-style-type: none;
 }
 
@@ -126,6 +127,7 @@ menu {
     background-position:  right center;
     background-repeat: no-repeat;
     padding: 0 1.1rem 0 0;
+    color: var(--secondary);
 }
 
 .li--two-level-list a:hover,
@@ -155,6 +157,10 @@ menu {
     padding: 0.25rem 1rem 0.25rem 1rem;
 }
 
+.ul__li__currency {
+    right: 2rem;
+}
+
 .ul__li__ul__li a {
     font-size: 1rem;
     color: var(--gray-dark);
@@ -169,4 +175,8 @@ menu {
 .ul__li__ul__li:hover a,
 .ul__li__ul__li:focus a {
     color: var(--gray-dark);
+}
+
+.svg--shopping-cart-icon {
+    margin-top: 10px;
 }
