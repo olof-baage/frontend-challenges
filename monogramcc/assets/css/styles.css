@@ -166,6 +166,12 @@ menu {
     color: var(--gray-dark);
 }
 
+.ul__li__currency .ul__li__ul__li  { 
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
 .ul__li__ul__li:hover,
 .ul__li__ul__li:focus {
     background-color: var(--gray-light);
