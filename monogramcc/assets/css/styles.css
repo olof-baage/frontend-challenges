@@ -1,3 +1,7 @@
+/* 
+    ___ >>> GENERAL STYLES, RESETS AND VARS 
+*/
+
 * {
     padding: 0;
     margin: 0;
@@ -44,33 +48,26 @@ body {
 }
 
 /* lists general */
-.ul {
-    display: flex;    
+
+ul {
+    display: flex;
 }
 
-.ul__li,
-.ul__li__ul__li {
+ul li {
     list-style-type: none;
 }
 
 /* links general */
-.a {
+a {
     text-decoration: none;
 }
 
-/* grid */
 
-.container {
-    width: 100%;
-    height: 100%;
-    display: flex; 
-    gap: 10px;
-    flex-direction: column;   
-}
+/*  
+     ___ >>> NAV, POSITION FIXED 
+*/
 
-/* menu, fixed */
-
-menu {
+nav {
     position: fixed;
     top: 1rem;
     left: 1%;
@@ -82,107 +79,134 @@ menu {
     background-color: var(--purple);
 }
 
-.svg--logo {
+.svg--brand {
     color: var(--secondary);
-    margin: 0.5rem 0.5rem 0 0.5rem;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-.menu__container-right {
-    height: auto;
-    width: auto;
+.nav__ul {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 1em 0 0;
-}
-
-.ul--main-menu {
-    margin-right: 1.5rem;
-    gap: 1rem;
-}
-
-.ul--shop-menu {
     gap: 0.5rem;
-    align-items: center;
 }
 
-.li--main-menu a,
-.li--shop-menu a {
-    color: var(--secondary);
-    font-weight: 300;
-    font-size: 0.75rem;
-    line-height: 1.5;
-    letter-spacing: 2px;
+.nav__li {
+    margin: 0 0 0 1rem;
     text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    font-weight: 300;
 }
 
-.li--one-level-list a:hover,
-.li--one-level-list a:focus {
-    color: var(--orange);
-}
-
-.li--two-level-list a {
-    background-image: url(../images/arrow_drop_down_24dp_EFC2B3_FILL0_wght400_GRAD0_opsz24.png);
-    background-size: 1.2rem auto;
-    background-position:  right center;
-    background-repeat: no-repeat;
-    padding: 0 1.1rem 0 0;
+.nav__li,
+.nav__li a {
     color: var(--secondary);
 }
 
-.li--two-level-list a:hover,
-.li--two-level-list a:focus {
+.nav__li a:hover,
+.nav__li a:focus,
+.nav__li:hover,
+.nav__li:focus {
+    color: var(--white);
+}
+
+.nav__li:first-child {
+    margin: 0;
+}
+
+.nav__li:last-child {
+    margin-left: 0.25rem;
+    margin-right: 1rem;
+}
+
+.li--icon {
+    margin:  0 0 0 1.5rem;
+}
+
+.li--dropdown-list {
+    background-image: url(../images/arrow_drop_down_24dp_EFC2B3_FILL0_wght400_GRAD0_opsz24.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding: 0 1rem 0 0;
+    background-size: 1rem auto;
+}
+
+.li--dropdown-list:hover,
+.li--dropdown-list:focus {
     color: var(--white);
     background-image: url(../images/arrow_drop_down_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png);
 }
 
-.li--level-two a {
-    background-image: none;
-    padding: 0;
-}
-
-.ul__li__ul--invisbile {
-    display: none;
-}
-
-.ul__li__ul {
+/* stylings for dropdown menu */
+.ul--dropdown-list {
     position: fixed;
     top: 4rem;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
     background-color: var(--white);
-    padding: 0.5rem 0 0.5rem 0;
-}
-
-.ul__li__ul__li {
-    width: calc(100% - 2rem);
-    padding: 0.25rem 1rem 0.25rem 1rem;
-}
-
-.ul__li__currency {
-    right: 2rem;
-}
-
-.ul__li__ul__li a {
+    padding: 0.5rem 0;
     font-size: 1rem;
-    color: var(--gray-dark);
+    font-weight: 300;
+} 
+
+.li--dropdown-item {
+    width: calc(100% - 2rem);
+    padding: 0.3em 1rem;
 }
 
-.ul__li__currency .ul__li__ul__li  { 
+.li--dropdown-item:hover,
+.li--dropdown-item:focus {
+    background-color: #e7e5e5;
+}
+
+.li--dropdown-item,
+.li--dropdown-item a {
+    color: var(--primary);
+    text-align: left;
+}
+
+.li--dropdown-item a:hover,
+.li--dropdown-item a:focus {
+    color: var(--primary);
+}
+
+#btn--currencies {
+    cursor: pointer;
+}
+
+#btn--currencies .ul--dropdown-list {
+    right: 1.5rem;
+}
+
+#btn--currencies .li--dropdown-item {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
 }
 
-.ul__li__ul__li:hover,
-.ul__li__ul__li:focus {
-    background-color: var(--gray-light);
-    color: var(--gray);
+.li--selected,
+.li--selected:hover,
+.li--selected:focus {
+    background-color: var(--purple);
+    color: var(--white);
 }
 
-.ul__li__ul__li:hover a,
-.ul__li__ul__li:focus a {
-    color: var(--gray-dark);
+
+/* nav class for java script */
+.ul--hidden {
+    display: none;
 }
 
-.svg--shopping-cart-icon {
-    margin-top: 10px;
+
+/* 
+    ___ >>> GRID 
+*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    gap: 10px;
+    flex-direction: column;   
 }

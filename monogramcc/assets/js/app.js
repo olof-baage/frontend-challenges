@@ -1,18 +1,22 @@
 // all elements
-const btnWorkflows = document.getElementById("btn-workflows");
-const btnCurrency = document.getElementById("btn-currency");
-const list__submenuWorkflows = document.getElementById("list__submenu-workflows");
-const list__submenuCurrency = document.getElementById("list__submenu-currency");
+const btnWorkflows = document.getElementById("btn--workflows");
+const btnCurrencies = document.getElementById("btn--currencies");
+const listWorkflows = document.getElementById("list--workflows");
+const listCurrencies = document.getElementById("list--currencies");
 
 // functions
-function openSubmenuWorkflows() {
-    list__submenuWorkflows.classList.toggle("ul__li__ul--invisbile");
+function toggleListWorkflows() {
+    listWorkflows.classList.toggle("ul--hidden");
 }
 
-function openSubmenuCurrency() {
-    list__submenuCurrency.classList.toggle("ul__li__ul--invisbile");
+function toggleListCurrencies() {
+    listCurrencies.classList.toggle("ul--hidden");
+    /*
+    --- >>> go over all list item and remove the selected class
+    --- >>> add the selected class to the selected itemn
+    */
 }
 
 // event listeners
-btnWorkflows.addEventListener('click', openSubmenuWorkflows, false);
-btnCurrency.addEventListener('click', openSubmenuCurrency, false);
+btnWorkflows.addEventListener('click', toggleListWorkflows, false);
+btnCurrencies.addEventListener('click', toggleListCurrencies, false);
