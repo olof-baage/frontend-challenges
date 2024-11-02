@@ -11,9 +11,13 @@ function toggleListWorkflows() {
 
 function toggleListCurrencies() {
     listCurrencies.classList.toggle("ul--hidden");
+}
+
+function toggleSelectedCurrency() {
     /*
-    --- >>> go over all list item and remove the selected class
-    --- >>> add the selected class to the selected itemn
+    remove class li--selected from item that was selected before
+    add class to new selected item
+    change parent node
     */
 }
 
