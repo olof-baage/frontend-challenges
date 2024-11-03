@@ -171,7 +171,8 @@ nav {
     color: var(--primary);
 }
 
-#btn--currencies {
+#btn--currencies,
+#btn--workflows {
     cursor: pointer;
 }
 
