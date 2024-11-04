@@ -209,9 +209,9 @@ nav {
 
 .container__page-header {
     width: 100%;
-    min-height: 100vh;
+    min-height: 87vh;
     display: flex; 
-    flex-direction: column;   
+    flex-direction: column; 
 }
 
 
@@ -229,7 +229,7 @@ nav {
     height: 100%;
     background-image: url(../images/shop_cta_xl_896f6b8270.webp);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: contain contain;
     background-position: center center;
 }
 
@@ -302,3 +302,34 @@ nav {
 /* 
     ___ >>> GRID 
 */
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: var(--green);
+}
+
+.product-overview {
+    display: flex;
+    flex-wrap: wrap;    
+    width: 83vw;
+    height: auto;
+    gap: 1rem;
+    padding: 2.5rem 0 0 0;
+}
+
+.product {
+    display: block;
+    height: 400px;
+    background-color: black;
+}
+
+.product--small {
+    width: 39.5vw;;
+}
+
+.product--wide {
+    width: 80vw;
+}
